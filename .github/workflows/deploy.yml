@@ -27,7 +27,7 @@ jobs:
           MONGODB_INITDB_ROOT_USERNAME: root
           MONGODB_INITDB_ROOT_PASSWORD: example
         ports:
-          - 27017:27017
+          - 27017:27017 #port opened by that service container to that running machine ; running on the running machine and not on the container
     steps:
       - name: Get Code
         uses: actions/checkout@v3
